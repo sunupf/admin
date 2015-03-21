@@ -19,10 +19,10 @@ var lessSource = [
 ]
 
 var cssSource = [
-  'bower_components/uikit/css/uikit.css',
-  'bower_components/uikit/css/components/dotnav.css',
-  'bower_components/uikit/css/components/form-password.css',
-  'bower_components/fullpage.js/jquery.fullPage.css',
+  'bower_components/uikit/css/uikit.min.css',
+  'bower_components/uikit/css/components/dotnav.min.css',
+  'bower_components/uikit/css/components/form-password.min.css',
+  'bower_components/fullpage.js/jquery.fullPage.min.css',
   'dev_packages/css/style.css'
 ]
 
@@ -52,7 +52,7 @@ gulp.task('less',function(){
 gulp.task('css',function(){
   gulp
     .src(cssSource)
-    .pipe(minify())
+//    .pipe(minify())
     .pipe(concatCSS('style.css'))
     .pipe(gulp.dest('assets/css'))
 });

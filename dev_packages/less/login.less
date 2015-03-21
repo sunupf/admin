@@ -13,28 +13,25 @@ img{
   margin: 0;
 }
 
-.slide{
-  position: relative;
-}
-
-.slide-info{
-  position: absolute;
+.slide-overlay{
   height: 100%;
   background: rgba(0,0,0,0.5);
-  padding: 45% 55% 0 10%;
-  font-size: 1.14em;
-  h2{
-    font-size: 3em;
-    margin-bottom: 2em;
-  }
-  p{
-    line-height: 1.5em;
-  }
-  h2,p{
-    position: relative;
-    font-weight: 300;
-    top: -45%;
-    color: white;
+  position: absolute;
+  width: 100%;
+  display: table;
+  &>div{
+    width: 33.33%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 60% 0 10%;
+    h2{
+      font-size: 3em;
+      margin-bottom: 1em;
+      font-weight: 300;
+    }
+    h2,p{
+      color: white;
+    }
   }
 }
 
@@ -43,21 +40,20 @@ img{
   height: 100%;
   right: 10%;
   width: 260px;
-  font-size: 1.14em;
-  font-weight: 300;
+  display: table;
+  top:0;
   &>div{
-    position: relative;
-    top: -80%;
+    display: table-cell;
+    vertical-align: middle;
   }
   img.logo{
     margin-bottom : 2em;
   }
   input[type='text'],
   input[type='password']{
-    padding: 10px 5px;
+    padding: 15px 5px;
   }
   input[type='submit'],.register-button{
-    font-size: 1.14em;
     padding: 8px 0;
   }
   img{

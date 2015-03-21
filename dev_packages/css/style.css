@@ -11,6 +11,12 @@ html {
 body {
   margin: 0;
 }
+#login-form,
+.slide-overlay {
+  position: absolute;
+  height: 100%;
+}
+
 img {
   background-size: cover;
 }
@@ -26,61 +32,53 @@ img {
   margin: 0;
 }
 
-#login-form img.logo,
-.slide-info h2 {
-  margin-bottom: 2em;
-}
-
-.slide {
-  position: relative;
-}
-
-.slide-info {
-  position: absolute;
-  height: 100%;
+.slide-overlay {
   background: rgba(0,0,0,.5);
-  padding: 45% 55% 0 10%;
-  font-size: 1.14em;
+  width: 100%;
+  display: table;
 }
 
-.slide-info h2 {
+.slide-overlay>div {
+  width: 33.33%;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 60% 0 10%;
+}
+
+.slide-overlay>div h2 {
   font-size: 3em;
-}
-
-.slide-info p {
-  line-height: 1.5em;
-}
-
-.slide-info h2,
-.slide-info p {
-  position: relative;
+  margin-bottom: 1em;
   font-weight: 300;
-  top: -45%;
+}
+
+.slide-overlay>div h2,
+.slide-overlay>div p {
   color: #fff;
 }
 
 #login-form {
-  position: absolute;
-  height: 100%;
   right: 10%;
   width: 260px;
-  font-size: 1.14em;
-  font-weight: 300;
+  display: table;
+  top: 0;
 }
 
 #login-form>div {
-  position: relative;
-  top: -80%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#login-form img.logo {
+  margin-bottom: 2em;
 }
 
 #login-form input[type=text],
 #login-form input[type=password] {
-  padding: 10px 5px;
+  padding: 15px 5px;
 }
 
 #login-form .register-button,
 #login-form input[type=submit] {
-  font-size: 1.14em;
   padding: 8px 0;
 }
 

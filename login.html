@@ -6,51 +6,48 @@
   
   <!--  Load CSS -->
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="bower_components/uikit/css/uikit.css">
-  <link rel="stylesheet" href="bower_components/uikit/css/components/dotnav.css">
-  <link rel="stylesheet" href="bower_components/uikit/css/components/form-password.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="bower_components/fullpage.js/jquery.fullPage.css">
-  <link rel="stylesheet" href="dev_packages/css/style.css">
 </head>
 <body>
 
   <div id="fullpage">
     <div class="section" data-anchor='slider1'>
       <div class="slide">
-        <div class="slide-info">
-          <h2>Manage Your Project</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Molestias soluta alias assumenda temporibus ipsa perspiciatis, 
-            fuga ullam nisi repellat. Repellat a laborum natus ullam praesentium 
-            laudantium, dolores nostrum earum explicabo placeat consequatur 
-            tempora debitis. Nihil illum quia earum nisi labore inventore obcaecati 
-            praesentium dolore accusamus magnam sapiente quos, voluptate ipsum
-          </p>
+        <div class="slide-overlay">
+          <div>
+            <h2>Manage Your Projects</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque est recusandae delectus qui, 
+            voluptas nihil ea, nulla exercitationem repellendus. Maiores, placeat modi culpa maxime ipsa 
+            ipsum officiis dolorem mollitia reprehenderit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Eaque libero iure ducimus quibusdam omnis nemo, sint voluptatum id beatae, 
+            repellendus doloremque excepturi sit a suscipit consequuntur unde recusandae officia officiis.</p>
+          </div>
         </div>
         <img src="assets/images/slider1.jpg" alt="Feature One">
       </div>
       <div class="slide">
-        <div class="slide-info">
-          <h2>Manage Your Test Cases</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Molestias soluta alias assumenda temporibus ipsa perspiciatis, 
-            fuga ullam nisi repellat. Repellat a laborum natus ullam praesentium laudantium, 
-            dolores nostrum earum explicabo placeat consequatur tempora debitis. 
-            Nihil illum quia earum nisi labore inventore obcaecati praesentium dolore accusamus magnam sapiente quos
-          </p>
+        <div class="slide-overlay">
+          <div>
+            <h2>Manage Your Test Cases</h2>
+            <p>Neque est recusandae delectus qui, 
+            voluptas nihil ea, nulla exercitationem repellendus. Maiores, placeat modi culpa maxime ipsa 
+            ipsum officiis dolorem mollitia reprehenderit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Eaque libero iure ducimus quibusdam omnis nemo, sint voluptatum id beatae, 
+            repellendus doloremque excepturi sit a suscipit consequuntur unde recusandae officia officiis.</p>
+          </div>
         </div>
         <img src="assets/images/slider2.jpg" alt="Feature Two">
       </div>
       <div class="slide">
-        <div class="slide-info">
-          <h2>Collaborative Work</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias soluta alias assumenda temporibus ipsa perspiciatis, 
-            fuga ullam nisi repellat. Repellat a laborum natus ullam praesentium laudantium, dolores nostrum earum explicabo placeat 
-            consequatur tempora debitis. Nihil illum quia earum nisi labore inventore obcaecati praesentium dolore accusamus magnam 
-          </p>
+        <div class="slide-overlay">
+          <div>
+            <h2>Collaborative Work</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, placeat modi culpa maxime ipsa 
+            ipsum officiis dolorem mollitia reprehenderit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Eaque libero iure ducimus quibusdam omnis nemo, sint voluptatum id beatae, 
+            repellendus doloremque excepturi sit a suscipit consequuntur unde recusandae officia officiis.</p>
+          </div>
         </div>
         <img src="assets/images/slider3.jpg" alt="Feature Three">
       </div>
@@ -67,8 +64,7 @@
   <!--  Login Form -->
   <div id='login-form'>
     <div>     
-      <img src="assets/images/logo.png" class="logo" alt="System Under Test's Logo">
-      <form>
+      <form action="dashboard.html" method="post">
         <div class="uk-form-row uk-form-icon uk-width-1-1">
           <i class="uk-icon-user"></i>
           <input type="text" placeholder="Email" class="uk-width-1-1">
@@ -89,10 +85,8 @@
   </div>
   
   <!--  Load js -->
-  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="assets/js/app.js"></script>
   <script src="bower_components/fullpage.js/jquery.fullPage.js"></script>
-  <script src="bower_components/uikit/js/uikit.js"></script>
-  <script src="bower_components/uikit/js/components/form-password.js"></script>
   <script>
     $(function(){
       $('#fullpage').fullpage({

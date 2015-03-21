@@ -1,0 +1,31 @@
+{
+  "name": "Sunu Pinasthika Fajar",
+  "version": "0.1",
+  "authors": [
+    "kokok <sunupf@gmail.com>"
+  ],
+  "description": "System Under Test which used on my research",
+  "main": "dasboard.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "dashboard",
+    "themes",
+    "project",
+    "test",
+    "cases"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fullpage.js": "~2.6.2",
+    "uikit": "~2.18.0"
+  }
+}

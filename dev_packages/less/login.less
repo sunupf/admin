@@ -1,0 +1,75 @@
+img{
+  background-size: cover;
+}
+
+#menu {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.slide{
+  position: relative;
+}
+
+.slide-info{
+  position: absolute;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  padding: 45% 55% 0 10%;
+  font-size: 1.14em;
+  h2{
+    font-size: 3em;
+    margin-bottom: 2em;
+  }
+  p{
+    line-height: 1.5em;
+  }
+  h2,p{
+    position: relative;
+    font-weight: 300;
+    top: -45%;
+    color: white;
+  }
+}
+
+#login-form{
+  position: absolute;
+  height: 100%;
+  right: 10%;
+  width: 260px;
+  font-size: 1.14em;
+  font-weight: 300;
+  &>div{
+    position: relative;
+    top: -80%;
+  }
+  img.logo{
+    margin-bottom : 2em;
+  }
+  input[type='text'],
+  input[type='password']{
+    padding: 10px 5px;
+  }
+  input[type='submit'],.register-button{
+    font-size: 1.14em;
+    padding: 8px 0;
+  }
+  img{
+    margin: 0 auto;
+    display: block;
+  }
+  div.register-label{
+    color: white;
+    text-align: center;
+  }
+  .uk-form-password-toggle{
+    font-weight: 400;
+  }
+}
+

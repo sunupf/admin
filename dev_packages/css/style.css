@@ -1,0 +1,99 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html {
+  font-family: Lato,sans-serif;
+}
+
+body {
+  margin: 0;
+}
+img {
+  background-size: cover;
+}
+
+#menu {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#login-form img.logo,
+.slide-info h2 {
+  margin-bottom: 2em;
+}
+
+.slide {
+  position: relative;
+}
+
+.slide-info {
+  position: absolute;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  padding: 45% 55% 0 10%;
+  font-size: 1.14em;
+}
+
+.slide-info h2 {
+  font-size: 3em;
+}
+
+.slide-info p {
+  line-height: 1.5em;
+}
+
+.slide-info h2,
+.slide-info p {
+  position: relative;
+  font-weight: 300;
+  top: -45%;
+  color: #fff;
+}
+
+#login-form {
+  position: absolute;
+  height: 100%;
+  right: 10%;
+  width: 260px;
+  font-size: 1.14em;
+  font-weight: 300;
+}
+
+#login-form>div {
+  position: relative;
+  top: -80%;
+}
+
+#login-form input[type=text],
+#login-form input[type=password] {
+  padding: 10px 5px;
+}
+
+#login-form .register-button,
+#login-form input[type=submit] {
+  font-size: 1.14em;
+  padding: 8px 0;
+}
+
+#login-form img {
+  margin: 0 auto;
+  display: block;
+}
+
+#login-form div.register-label {
+  color: #fff;
+  text-align: center;
+}
+
+#login-form .uk-form-password-toggle {
+  font-weight: 400;
+}

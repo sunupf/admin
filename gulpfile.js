@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
 var jsSource = [
   'bower_components/jquery/dist/jquery.js',
-  'bower_components/fullpage.js/jquery.fullPage.js',
+//  'bower_components/fullpage.js/jquery.fullPage.js',
   'bower_components/uikit/js/uikit.js',
   'bower_components/uikit/js/components/form-password.js'
 ]
@@ -22,8 +22,8 @@ var cssSource = [
   'bower_components/uikit/css/uikit.min.css',
   'bower_components/uikit/css/components/dotnav.min.css',
   'bower_components/uikit/css/components/form-password.min.css',
-  'dev_packages/css/style.css',
-  'bower_components/fullpage.js/jquery.fullPage.min.css'
+//  'bower_components/fullpage.js/jquery.fullPage.min.css'
+  'dev_packages/css/style.css'
 ]
 
 var taskDefault = [

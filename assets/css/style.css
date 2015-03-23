@@ -7321,7 +7321,7 @@ img {
 .slide-overlay {
   background: rgba(0,0,0,.5);
   display: table;
-  width: 100%;
+  width: 33.33%;
 }
 
 .slide-overlay>div {

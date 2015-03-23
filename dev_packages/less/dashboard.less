@@ -1,0 +1,46 @@
+html,body{
+  height: 100%;
+}
+#sidebar{
+  background-color: #1b2c3b;
+  width: 200px;
+  position: absolute;
+  height: 100%;
+}
+#main{
+  margin-left: 200px;
+  position: relative;
+  height: 100%;
+  #navigation{
+    background-color: #fff;
+    position: relative;
+    ul{
+      border-bottom: 1px solid #f0f0f0;
+      padding: 0;
+      margin: 0;
+      li{
+        font-size: 12px;
+        &.uk-active>a>span{
+          color: #1b2c3b;
+        }
+        a{ 
+          line-height: 3em;
+          padding: 0 20px;
+          text-transform: uppercase;
+          i{
+            margin-left: 20px; 
+          }
+        }
+      }
+    }
+  } 
+  #content{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #eaedf1;
+    margin-top: -37px;
+    padding-top: 37px;
+    height: 100%;
+  }
+}

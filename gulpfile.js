@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
 var jsSource = [
   'bower_components/jquery/dist/jquery.js',
-//  'bower_components/fullpage.js/jquery.fullPage.js',
+  'bower_components/fullpage.js/jquery.fullPage.js',
   'bower_components/uikit/js/uikit.js',
   'bower_components/uikit/js/components/form-password.js'
 ]
@@ -18,17 +18,12 @@ var loginLess = [
   'dev_packages/less/login.less'
 ]
 
-var dashboardLess = [
-  'dev_packages/less/base.less',
-  'dev_packages/less/dashboard.less'
-]
-
 var cssSource = [
   'bower_components/uikit/css/uikit.min.css',
   'bower_components/uikit/css/components/dotnav.min.css',
   'bower_components/uikit/css/components/form-password.min.css',
-//  'bower_components/fullpage.js/jquery.fullPage.min.css',
-  'dev_packages/css/style.css'
+  'dev_packages/css/style.css',
+  'bower_components/fullpage.js/jquery.fullPage.min.css'
 ]
 
 var taskDefault = [
@@ -36,6 +31,29 @@ var taskDefault = [
   'js',
   'css'
 ]
+
+var dashboardLess = [
+  'dev_packages/less/base.less',
+  'dev_packages/less/dashboard.less'
+]
+
+var cssDashboardSource = [
+  'bower_components/uikit/css/uikit.min.css',
+  'dev_packages/css/dashboard.css'
+]
+
+var jsDashboardSource = [
+  'bower_components/jquery/dist/jquery.js'
+]
+
+var taskDashboard = [
+  'dashboardLessBuild',
+  'cssDahsboard',
+  'jsDashboard'
+]
+
+
+// Login
 
 gulp.task('js',function(){
   gulp
@@ -54,15 +72,6 @@ gulp.task('loginLessBuild',function(){
     .pipe(gulp.dest('dev_packages/css'));
 });
 
-gulp.task('dashboardLess',function(){
-  gulp
-    .src(dashboardLess)
-    .pipe(less())
-    .pipe(minify())
-    .pipe(concatCSS('dashboard.css'))
-    .pipe(gulp.dest('dev_packages/css'));
-});
-
 gulp.task('css',function(){
   gulp
     .src(cssSource)
@@ -71,8 +80,40 @@ gulp.task('css',function(){
     .pipe(gulp.dest('assets/css'))
 });
 
+// Dashboard 
+
+gulp.task('jsDashboard',function(){
+  gulp
+    .src(jsDashboardSource)
+    .pipe(uglify())
+    .pipe(concat('dashboard.js'))
+    .pipe(gulp.dest('assets/js'))
+});
+
+gulp.task('cssDahsboard',function(){
+  gulp
+    .src(cssDashboardSource)
+    .pipe(minify())
+    .pipe(concatCSS('dashboard.css'))
+    .pipe(gulp.dest('assets/css'))
+});
+
+gulp.task('dashboardLessBuild',function(){
+  gulp
+    .src(dashboardLess)
+    .pipe(less())
+    .pipe(minify())
+    .pipe(concatCSS('dashboard.css'))
+    .pipe(gulp.dest('dev_packages/css'));
+});
+
+
 gulp.task('default',function(){
   gulp.run(taskDefault);
   gulp.watch(loginLess, taskDefault);
+});
+
+gulp.task('dashboard',function(){
+  gulp.watch(dashboardLess, taskDashboard);
 });
 

@@ -7171,123 +7171,6 @@ a.uk-thumbnail:hover {
     page-break-after: avoid;
   }
 }
-/*! UIkit 2.18.0 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
-
-.uk-dotnav {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: -15px;
-  margin-top: -15px;
-  padding: 0;
-  list-style: none;
-}
-
-.uk-dotnav>* {
-  -ms-flex: none;
-  -webkit-flex: none;
-  flex: none;
-  padding-left: 15px;
-  margin-top: 15px;
-  float: left;
-}
-
-.uk-dotnav:after,
-.uk-dotnav:before {
-  content: "";
-  display: block;
-  overflow: hidden;
-}
-
-.uk-dotnav:after {
-  clear: both;
-}
-
-.uk-dotnav>*>* {
-  display: block;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: rgba(50,50,50,.1);
-  text-indent: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.uk-dotnav>*>:focus,
-.uk-dotnav>*>:hover {
-  background: rgba(50,50,50,.4);
-  outline: 0;
-}
-
-.uk-dotnav>*>:active {
-  background: rgba(50,50,50,.6);
-}
-
-.uk-dotnav>.uk-active>* {
-  background: rgba(50,50,50,.4);
-}
-
-.uk-dotnav-contrast>*>* {
-  background: rgba(255,255,255,.4);
-}
-
-.uk-dotnav-contrast>*>:focus,
-.uk-dotnav-contrast>*>:hover {
-  background: rgba(255,255,255,.7);
-}
-
-.uk-dotnav-contrast>*>:active,
-.uk-dotnav-contrast>.uk-active>* {
-  background: rgba(255,255,255,.9);
-}
-
-.uk-dotnav-vertical {
-  -ms-flex-direction: column;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-}
-
-.uk-dotnav-vertical>* {
-  float: none;
-}
-/*! UIkit 2.18.0 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
-
-.uk-form-password {
-  display: inline-block;
-  position: relative;
-  max-width: 100%;
-}
-
-.uk-form-password-toggle {
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  margin-top: -6px;
-  font-size: 13px;
-  line-height: 13px;
-  color: #999;
-}
-
-.uk-form-password-toggle:hover {
-  color: #999;
-  text-decoration: none;
-}
-
-.uk-form-password>input {
-  padding-right: 50px!important;
-}
-#menu,
-body {
-  margin: 0;
-}
-
 h1,
 h2,
 h3,
@@ -7298,86 +7181,63 @@ html {
   font-family: Lato,sans-serif;
 }
 
-#menu,
-img {
-  width: 100%;
+body {
+  margin: 0;
 }
 
-#login-form,
-.slide-overlay {
-  position: absolute;
+#main,
+#sidebar,
+body,
+html {
   height: 100%;
 }
 
-#menu {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  left: 10px;
-  z-index: 70;
+#sidebar {
+  background-color: #1b2c3b;
+  width: 200px;
+  position: absolute;
+}
+
+#main {
+  margin-left: 200px;
+  position: relative;
+}
+
+#main #navigation {
+  background-color: #fff;
+  position: relative;
+}
+
+#main #navigation ul {
+  border-bottom: 1px solid #f0f0f0;
   padding: 0;
+  margin: 0;
 }
 
-.slide-overlay {
-  background: rgba(0,0,0,.5);
-  display: table;
-  width: 100%;
+#main #navigation ul li {
+  font-size: 12px;
 }
 
-.slide-overlay>div {
-  display: table-cell;
-  vertical-align: middle;
-  padding: 0 60% 0 10%;
+#main #navigation ul li.uk-active>a>span {
+  color: #1b2c3b;
 }
 
-.slide-overlay>div h2 {
-  font-size: 3em;
-  margin-bottom: 1em;
-  font-weight: 300;
-  line-height: 1em;
+#main #navigation ul li a {
+  line-height: 3em;
+  padding: 0 20px;
+  text-transform: uppercase;
 }
 
-.slide-overlay>div h2,
-.slide-overlay>div p {
-  color: #fff;
+#main #navigation ul li a i {
+  margin-left: 20px;
 }
 
-#login-form {
-  right: 10%;
-  width: 260px;
-  display: table;
-  top: 0;
-}
-
-#login-form>div {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-#login-form img.logo {
-  margin-bottom: 2em;
-}
-
-#login-form input[type=password],
-#login-form input[type=text] {
-  padding: 15px 5px;
-}
-
-#login-form .register-button,
-#login-form input[type=submit] {
-  padding: 8px 0;
-}
-
-#login-form img {
-  margin: 0 auto;
-  display: block;
-}
-
-#login-form div.register-label {
-  color: #fff;
-  text-align: center;
-}
-
-#login-form .uk-form-password-toggle {
-  font-weight: 400;
+#main #content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #eaedf1;
+  margin-top: -37px;
+  padding-top: 37px;
+  height: 100%;
 }

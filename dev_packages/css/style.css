@@ -11,14 +11,15 @@ html {
 body {
   margin: 0;
 }
+#menu,
+img {
+  width: 100%;
+}
+
 #login-form,
 .slide-overlay {
   position: absolute;
   height: 100%;
-}
-
-img {
-  background-size: cover;
 }
 
 #menu {
@@ -27,19 +28,17 @@ img {
   right: 10px;
   left: 10px;
   z-index: 70;
-  width: 100%;
   padding: 0;
   margin: 0;
 }
 
 .slide-overlay {
   background: rgba(0,0,0,.5);
-  width: 100%;
   display: table;
+  width: 100%;
 }
 
 .slide-overlay>div {
-  width: 33.33%;
   display: table-cell;
   vertical-align: middle;
   padding: 0 60% 0 10%;
@@ -49,6 +48,7 @@ img {
   font-size: 3em;
   margin-bottom: 1em;
   font-weight: 300;
+  line-height: 1em;
 }
 
 .slide-overlay>div h2,

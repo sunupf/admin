@@ -11,12 +11,6 @@ html {
 body {
   margin: 0;
 }
-#sidebar,
-body,
-html {
-  height: 100%;
-}
-
 #sidebar #profile a img,
 #sidebar #projects ul.uk-list li i.uk-icon-ellipsis-h {
   -webkit-border-radius: 50%;
@@ -25,10 +19,24 @@ html {
   -o-border-radius: 50%;
 }
 
+#main #content,
+#main #content .container {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
 #sidebar {
   background-color: #1b2c3b;
   width: 200px;
   position: absolute;
+  height: 100%;
 }
 
 #sidebar #profile a {
@@ -39,6 +47,7 @@ html {
 
 #sidebar #profile a:hover {
   text-decoration: none;
+  background-color: #213648;
 }
 
 #sidebar #profile a img {
@@ -100,6 +109,7 @@ html {
   margin-left: 200px;
   position: relative;
   height: 100%;
+  overflow: hidden;
 }
 
 #main #navigation {
@@ -132,11 +142,26 @@ html {
 }
 
 #main #content {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   background-color: #eaedf1;
   margin-top: -37px;
   padding-top: 37px;
-  height: 100%;
+  overflow: hidden;
+  width: 2500px;
+}
+
+#main #content:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+#main #content .container {
+  padding: 20px;
+  width: 600px;
+  background-color: #fff;
+  float: left;
+}
+
+#main #content .container:nth-child(2n+1) {
+  background-color: transparent;
 }

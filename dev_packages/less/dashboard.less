@@ -6,6 +6,76 @@ html,body{
   width: 200px;
   position: absolute;
   height: 100%;
+  #profile{
+    a{
+      color: white;
+      padding: 20px;
+      display: block;
+      &:hover{
+        text-decoration: none;
+      }
+      img{
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+      }
+    }
+  }
+  #projects{
+    h3{
+      padding: 10px 20px;
+      font-size: 1em;
+      color: white;
+      background-color: #32526e;
+      a{
+        display: inline-block;
+        float: right;
+        color: white; 
+      }
+    }
+    ul.uk-list{
+      li{
+        position: relative;
+        &.active{
+          background-color: #213648;
+        }
+        i.uk-icon-ellipsis-h{ 
+          display: none;
+          position: absolute;
+          right: 20px;
+          width: 1em;
+          height: 1em;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          border-radius: 50%;
+          background-color: #fff;
+          color: #1b2c3b; 
+          text-align: center;
+          padding: 3px;
+          top: 10px;
+          cursor: pointer;
+        }
+        &:hover{
+          i.uk-icon-ellipsis-h{
+            display: block;
+          }
+        }
+        a{
+          color: white;
+          display: block;
+          padding: 10px 20px;
+          &:hover{
+            background-color: #213648;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
 }
 #main{
   margin-left: 200px;

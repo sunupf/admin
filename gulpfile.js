@@ -72,7 +72,7 @@ gulp.task('loginLessBuild',function(){
     .pipe(gulp.dest('dev_packages/css'));
 });
 
-gulp.task('css',function(){
+gulp.task('css',['loginLessBuild'],function(){
   gulp
     .src(cssSource)
     .pipe(minify())
@@ -90,7 +90,7 @@ gulp.task('jsDashboard',function(){
     .pipe(gulp.dest('assets/js'))
 });
 
-gulp.task('cssDahsboard',function(){
+gulp.task('cssDahsboard',['dashboardLessBuild'],function(){
   gulp
     .src(cssDashboardSource)
     .pipe(minify())

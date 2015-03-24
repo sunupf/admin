@@ -11,11 +11,18 @@ html {
 body {
   margin: 0;
 }
-#main,
 #sidebar,
 body,
 html {
   height: 100%;
+}
+
+#sidebar #profile a img,
+#sidebar #projects ul.uk-list li i.uk-icon-ellipsis-h {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 #sidebar {
@@ -24,9 +31,75 @@ html {
   position: absolute;
 }
 
+#sidebar #profile a {
+  color: #fff;
+  padding: 20px;
+  display: block;
+}
+
+#sidebar #profile a:hover {
+  text-decoration: none;
+}
+
+#sidebar #profile a img {
+  border-radius: 50%;
+}
+
+#sidebar #projects h3 {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #32526e;
+}
+
+#sidebar #projects h3 a {
+  display: inline-block;
+  float: right;
+  color: #fff;
+}
+
+#sidebar #projects ul.uk-list li {
+  position: relative;
+}
+
+#sidebar #projects ul.uk-list li.active {
+  background-color: #213648;
+}
+
+#sidebar #projects ul.uk-list li i.uk-icon-ellipsis-h {
+  display: none;
+  position: absolute;
+  right: 20px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #1b2c3b;
+  text-align: center;
+  padding: 3px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#sidebar #projects ul.uk-list li:hover i.uk-icon-ellipsis-h {
+  display: block;
+}
+
+#sidebar #projects ul.uk-list li a {
+  color: #fff;
+  display: block;
+  padding: 10px 20px;
+}
+
+#sidebar #projects ul.uk-list li a:hover {
+  background-color: #213648;
+  text-decoration: none;
+}
+
 #main {
   margin-left: 200px;
   position: relative;
+  height: 100%;
 }
 
 #main #navigation {

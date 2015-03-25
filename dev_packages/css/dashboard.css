@@ -25,6 +25,17 @@ body {
   -webkit-box-sizing: border-box;
 }
 
+.sut-list li,
+.sut-list-activity li {
+  border-bottom: 1px solid #eee;
+  list-style: none;
+}
+
+.sut-list li:last-child,
+.sut-list-activity li:last-child {
+  border: 0;
+}
+
 body,
 html {
   height: 100%;
@@ -156,8 +167,6 @@ html {
   background-color: #eaedf1;
   margin-top: -37px;
   padding-top: 37px;
-  overflow: hidden;
-  width: 2500px;
 }
 
 #main #content:after {
@@ -170,38 +179,39 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 20px;
-  width: 600px;
+  width: 50%;
   background-color: #fff;
   float: left;
 }
 
-#main #content .container:nth-child(2n+1) {
-  background-color: transparent;
-}
-
-#main #content .container:nth-child(2n+1) h3 {
+#main #content .container h3 {
+  text-transform: uppercase;
   padding: 10px 20px;
   background-color: #fff;
 }
 
-#main #content .container:nth-child(2n+1) h3 a {
+#main #content .container h3 a {
   transition: all .32s ease;
   float: right;
   margin-left: 10px;
   color: #aaa;
 }
 
-#main #content .container:nth-child(2n+1) h3 a:hover {
+#main #content .container h3 a:hover {
   color: #1b2c3b;
 }
 
-#main #content .container:nth-child(2n+1) h3 a i {
+#main #content .container h3 a i {
   font-family: Lato,sans-serif;
 }
 
-#main #content .container:nth-child(2n+1) h3 a i:before {
+#main #content .container h3 a i:before {
   font-family: FontAwesome;
   margin-right: 5px;
+}
+
+#main #content .container:nth-child(2n+1) {
+  background-color: transparent;
 }
 
 .sut-list {
@@ -209,14 +219,8 @@ html {
 }
 
 .sut-list li {
-  border-bottom: 1px solid #eee;
   background-color: #fff;
   padding: 20px;
-  list-style: none;
-}
-
-.sut-list li:last-child {
-  border: 0;
 }
 
 .sut-list li:hover {
@@ -243,6 +247,68 @@ html {
   font-style: italic;
 }
 
+.sut-list-activity {
+  padding-left: 0;
+}
+
+.sut-list-activity li {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.sut-list-activity li:hover {
+  background-color: #f9f9f9;
+}
+
+.sut-list-activity li:hover a.icon-action {
+  display: block;
+}
+
+.sut-list-activity li .check {
+  float: left;
+  font-size: 2em;
+  margin-right: 1em;
+  color: #ff525d;
+  transition: color .32s ease;
+}
+
+.sut-list-activity li .check.active {
+  color: #1fbba6;
+}
+
+.sut-list-activity li .check.active:hover {
+  color: #ff525d;
+}
+
+.sut-list-activity li .check:hover {
+  color: #1fbba6;
+}
+
+.sut-list-activity li div {
+  float: left;
+  padding-left: 20px;
+  border-left: 1px solid #eee;
+}
+
+.sut-list-activity li div h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 3em;
+  font-weight: 700;
+}
+
+.sut-list-activity li div p {
+  font-style: italic;
+  margin-top: 0;
+}
+
+.sut-list-activity li .delete,
+.sut-list-activity li .edit {
+  display: none;
+  float: right;
+  margin-left: 5px;
+}
+
 a.icon-action.delete i:hover {
   background-color: #ff525d;
   color: #fff;
@@ -255,6 +321,7 @@ a.icon-action.edit i:hover {
 
 a.icon-action.add {
   color: #fff;
+  text-transform: none;
 }
 
 a.icon-action.add i {

@@ -124,8 +124,8 @@ html,body{
     margin-top: -37px;
     padding-top: 37px;
     height: 100%;
-    overflow: hidden;
-    width: 2500px;
+//    overflow: hidden;
+//    width: 2500px;
     &:after{
       display: table;
       content: "";
@@ -135,35 +135,35 @@ html,body{
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
-      padding: 20px;
-      width: 600px;
+      padding: 20px; 
+      width: 50%;
       height: 100%;
       background-color: #fff;
       float: left;
-      &:nth-child(2n+1){
-        background-color: transparent;
-        h3{
-          padding: 10px 20px;
-          background-color: white;
-          a{
-            transition: all 0.32s ease;
-            float: right;
-            margin-left : 10px;
-            color: #aaa;
-            &:hover{
-              color: #1b2c3b;
-            }
-            
-            i{
-              font-family: "Lato", sans-serif;
-              &:before{
-                font-family: "FontAwesome";
-                margin-right: 5px;
-              }
+      h3{
+        text-transform: uppercase;
+        padding: 10px 20px;
+        background-color: white;
+        a{
+          transition: all 0.32s ease;
+          float: right;
+          margin-left : 10px;
+          color: #aaa;
+          &:hover{
+            color: #1b2c3b;
+          }
+
+          i{
+            font-family: "Lato", sans-serif;
+            &:before{
+              font-family: "FontAwesome";
+              margin-right: 5px;
             }
           }
         }
-        
+      }
+      &:nth-child(2n+1){
+        background-color: transparent;
       }
     }
   }
@@ -201,6 +201,62 @@ html,body{
   }
 }
 
+.sut-list-activity{
+  padding-left: 0;
+  li{
+    border-bottom: 1px solid #eee;
+    background-color: white;
+    padding: 20px;
+    list-style: none;
+    &:last-child{
+      border: 0;
+    }
+    &:hover{
+      background-color: #f9f9f9;
+      a.icon-action{
+        display: block;
+      }
+    }
+    .check{
+      float: left;
+      margin-right: 10px;
+      font-size: 2em;
+      margin-right: 1em;
+      color: #ff525d;
+      transition: color 0.32s ease;
+      &.active{
+        color: #1fbba6;
+        &:hover{
+          color: #ff525d;
+        }
+      }
+      &:hover{
+        color: #1fbba6;
+      }
+    }
+    div{
+      float: left;
+      padding-left: 20px;
+      border-left: 1px solid #eee;
+      h4{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-right: 3em;
+        font-weight: 700;
+      }
+      p{
+        font-style: italic;
+        margin-top: 0;
+      }
+    }
+    .delete,.edit{
+      display: none;
+      float: right;
+      margin-left: 5px;
+    }
+  }
+}
+
 a.icon-action{
   &.delete{
     i:hover{
@@ -216,6 +272,7 @@ a.icon-action{
   }
   &.add{
     color: white;
+    text-transform: none;
     i{
       width: auto;
       padding : 5px;

@@ -18,13 +18,28 @@
       </a>
     </div>
     <div id="projects">
-      <h3>PROJECTS <a href="#search_project"><i class="uk-icon-search"></i></a></h3>
+      <h3>TODO LIST <a href="#search_project"><i class="uk-icon-search"></i></a></h3>
       <ul class="uk-list uk-list-space">
-        <li class="active"><a href="#">Quickly</a><i class="uk-animation-slide-right uk-icon-ellipsis-h"></i></li>
-        <li><a href="#">Fastly</a><i class="uk-animation-slide-right uk-icon-ellipsis-h"></i></li>
-        <li><a href="#">Rapidly</a><i class="uk-animation-slide-right uk-icon-ellipsis-h"></i></li>
-        <li><a href="#">Speedy</a><i class="uk-animation-slide-right uk-icon-ellipsis-h"></i></li>
-        <li><a href="#">Express</a><i class="uk-animation-slide-right uk-icon-ellipsis-h"></i></li>
+        <li class="active">
+          <a href="#">Quickly</a>
+          <i class="uk-animation-slide-right uk-icon-ellipsis-h"></i>
+        </li>
+        <li>
+          <a href="#">Fastly</a>
+          <i class="uk-animation-slide-right uk-icon-ellipsis-h"></i>
+        </li>
+        <li>
+          <a href="#">Rapidly</a>
+          <i class="uk-animation-slide-right uk-icon-ellipsis-h"></i>
+        </li>
+        <li>
+          <a href="#">Speedy</a>
+          <i class="uk-animation-slide-right uk-icon-ellipsis-h"></i>
+        </li>
+        <li>
+          <a href="#">Express</a>
+          <i class="uk-animation-slide-right uk-icon-ellipsis-h"></i>
+        </li>
       </ul>
     </div>
     <a href="#" class='add project'><i class="uk-icon-plus"></i> Add</a>
@@ -34,14 +49,13 @@
       <ul class="uk-breadcrumb">
         <li><a href="#">DASHBOARD</a></li>
         <li><a href="#">QUICKLY <i class="uk-icon-chevron-circle-down"></i></a></li>
-        <li><a href="#">SPECIFICATION</a></li>
-        <li class="uk-active"><a href="#"><span>FS1 - USER CAN LOGIN TO THE SYSTEM</span><i class="uk-icon-chevron-circle-down"></i></a></li>
+        <li class="uk-active"><a href="#"><span>Quickly Requirement</span><i class="uk-icon-chevron-circle-down"></i></a></li>
       </ul>
     </div>
     <div id="content">
       <div class='container'>
         <h3>
-          PROJECTS 
+          ACTIVITIES
           <a href="#" class="add icon-action"><i class="uk-icon-plus">Add</i></a>
           <a href="#"><i class="uk-icon-search"></i></a>
         </h3>
@@ -49,19 +63,19 @@
           <li>
             <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
             <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
-            <h4>Quickly</h4>
+            <h4>Quickly Requirement</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo debitis excepturi expedita praesentium minima similique, facilis hic tempora quas dolore.</p>
             <div class="uk-progress">
-              <div class="uk-progress-bar" style="width: 40%;"> 4 of 10 Requirements (40%) </div>
+              <div class="uk-progress-bar" style="width: 100%;"> 10 of 10 Todo (100%) </div>
             </div>
           </li>
           <li>
             <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
             <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
-            <h4>Fastly</h4>
+            <h4>Quickly Implementation</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo debitis excepturi expedita praesentium minima similique, facilis hic tempora quas dolore.</p>
             <div class="uk-progress">
-              <div class="uk-progress-bar" style="width: 40%;"> 4 of 10 Requirements (40%) </div>
+              <div class="uk-progress-bar" style="width: 40%;"> 4 of 10 Todo (40%) </div>
             </div>
           </li>
         </ul>
@@ -69,8 +83,48 @@
       </div>
       <div class='container'>
         <h3>
-          QUICKLY
+          Quickly Requirement
+          <a href="#" class="add icon-action"><i class="uk-icon-plus">Add</i></a>
+          <a href="#"><i class="uk-icon-search"></i></a>
         </h3>
+        <ul class="sut-list-activity">
+          <li class="uk-clearfix">
+            <a href="#" class="check"><i class="uk-icon-circle-o"></i></a>
+            <div>
+              <h4>Quickly Requirement</h4>
+              <p>Due : 01 Dec 2015</p>
+            </div>
+            <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
+            <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
+          </li>
+          <li class="uk-clearfix">
+            <a href="#" class="check"><i class="uk-icon-circle-o"></i></a>
+            <div>
+              <h4>Quickly Implementation</h4>
+              <p>Due : 11 Dec 2015</p>
+            </div>
+            <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
+            <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
+          </li>
+          <li class="uk-clearfix">
+            <a href="#" class="check active"><i class="uk-icon-check-circle"></i></a>
+            <div>
+              <h4>Quickly Testing</h4>
+              <p>Due : 11 Dec 2015</p>
+            </div>
+            <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
+            <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
+          </li>
+          <li class="uk-clearfix">
+            <a href="#" class="check"><i class="uk-icon-circle-o"></i></a>
+            <div>
+              <h4>Quickly Maintenance</h4>
+              <p>Due : 11 Dec 2015</p>
+            </div>
+            <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
+            <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
+          </li>
+        </ul>
       </div>
       <div class='container'>Lorem ipsum dolor sit.</div>
       <div class='container'>Lorem ipsum dolor sit.</div>

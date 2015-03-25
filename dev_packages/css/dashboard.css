@@ -21,8 +21,6 @@ body {
 
 #main #content,
 #main #content .container {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   height: 100%;
   -webkit-box-sizing: border-box;
 }
@@ -105,6 +103,17 @@ html {
   text-decoration: none;
 }
 
+#sidebar a.add.project {
+  display: block;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+  position: fixed;
+  width: 160px;
+  bottom: 0;
+  color: #1fbba6;
+}
+
 #main {
   margin-left: 200px;
   position: relative;
@@ -142,6 +151,8 @@ html {
 }
 
 #main #content {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #eaedf1;
   margin-top: -37px;
   padding-top: 37px;
@@ -156,6 +167,8 @@ html {
 }
 
 #main #content .container {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   padding: 20px;
   width: 600px;
   background-color: #fff;
@@ -164,4 +177,114 @@ html {
 
 #main #content .container:nth-child(2n+1) {
   background-color: transparent;
+}
+
+#main #content .container:nth-child(2n+1) h3 {
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+#main #content .container:nth-child(2n+1) h3 a {
+  transition: all .32s ease;
+  float: right;
+  margin-left: 10px;
+  color: #aaa;
+}
+
+#main #content .container:nth-child(2n+1) h3 a:hover {
+  color: #1b2c3b;
+}
+
+#main #content .container:nth-child(2n+1) h3 a i {
+  font-family: Lato,sans-serif;
+}
+
+#main #content .container:nth-child(2n+1) h3 a i:before {
+  font-family: FontAwesome;
+  margin-right: 5px;
+}
+
+.sut-list {
+  padding-left: 0;
+}
+
+.sut-list li {
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  padding: 20px;
+  list-style: none;
+}
+
+.sut-list li:last-child {
+  border: 0;
+}
+
+.sut-list li:hover {
+  background-color: #f9f9f9;
+}
+
+.sut-list li:hover a.icon-action {
+  display: block;
+}
+
+.sut-list li h4 {
+  margin-top: 0;
+  padding-right: 3em;
+  font-weight: 700;
+}
+
+.sut-list li a.icon-action {
+  display: none;
+  float: right;
+  margin-left: 5px;
+}
+
+.sut-list li p {
+  font-style: italic;
+}
+
+a.icon-action.delete i:hover {
+  background-color: #ff525d;
+  color: #fff;
+}
+
+a.icon-action.edit i:hover {
+  background-color: #1fbba6;
+  color: #fff;
+}
+
+a.icon-action.add {
+  color: #fff;
+}
+
+a.icon-action.add i {
+  width: auto;
+  padding: 5px;
+  font-size: .8em;
+  background-color: #aaa;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+a.icon-action.add i:hover {
+  background-color: #1fbba6;
+}
+
+a.icon-action i {
+  padding: 5px;
+  width: 1em;
+  height: 1em;
+  font-size: .8em;
+  text-align: center;
+  background-color: #aaa;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  transition: all .32s ease;
 }

@@ -7,6 +7,7 @@
   <!--  Load CSS -->
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="stylesheet" href="bower_components/uikit/css/components/progress.almost-flat.min.css">
 </head>
 <body>
   <div id="sidebar">
@@ -26,6 +27,7 @@
         <li><a href="#">Express</a><i class="uk-animation-slide-right uk-icon-ellipsis-h"></i></li>
       </ul>
     </div>
+    <a href="#" class='add project'><i class="uk-icon-plus"></i> Add</a>
   </div>
   <div id="main">
     <div id="navigation">
@@ -37,8 +39,39 @@
       </ul>
     </div>
     <div id="content">
-      <div class='container'>Lorem ipsum dolor sit.</div>
-      <div class='container'>Lorem ipsum dolor sit.</div>
+      <div class='container'>
+        <h3>
+          PROJECTS 
+          <a href="#" class="add icon-action"><i class="uk-icon-plus">Add</i></a>
+          <a href="#"><i class="uk-icon-search"></i></a>
+        </h3>
+        <ul class="sut-list">
+          <li>
+            <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
+            <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
+            <h4>Quickly</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo debitis excepturi expedita praesentium minima similique, facilis hic tempora quas dolore.</p>
+            <div class="uk-progress">
+              <div class="uk-progress-bar" style="width: 40%;"> 4 of 10 Requirements (40%) </div>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
+            <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
+            <h4>Fastly</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo debitis excepturi expedita praesentium minima similique, facilis hic tempora quas dolore.</p>
+            <div class="uk-progress">
+              <div class="uk-progress-bar" style="width: 40%;"> 4 of 10 Requirements (40%) </div>
+            </div>
+          </li>
+        </ul>
+        
+      </div>
+      <div class='container'>
+        <h3>
+          QUICKLY
+        </h3>
+      </div>
       <div class='container'>Lorem ipsum dolor sit.</div>
       <div class='container'>Lorem ipsum dolor sit.</div>
       <div class='container'>Lorem ipsum dolor sit.</div>

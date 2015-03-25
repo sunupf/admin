@@ -77,6 +77,16 @@ html,body{
       }
     }
   }
+  a.add.project{
+    display: block;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    position: fixed;
+    width: 160px;
+    bottom: 0px;
+    color: #1fbba6;
+  }
 }
 #main{
   margin-left: 200px;
@@ -132,7 +142,108 @@ html,body{
       float: left;
       &:nth-child(2n+1){
         background-color: transparent;
+        h3{
+          padding: 10px 20px;
+          background-color: white;
+          a{
+            transition: all 0.32s ease;
+            float: right;
+            margin-left : 10px;
+            color: #aaa;
+            &:hover{
+              color: #1b2c3b;
+            }
+            
+            i{
+              font-family: "Lato", sans-serif;
+              &:before{
+                font-family: "FontAwesome";
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+        
       }
     }
+  }
+}
+
+.sut-list{
+  padding-left: 0;
+  li{
+    border-bottom: 1px solid #eee;
+    background-color: white;
+    padding: 20px;
+    list-style: none;
+    &:last-child{
+      border: 0;
+    }
+    &:hover{
+      background-color: #f9f9f9;
+      a.icon-action{
+        display: block;
+      }
+    }
+    h4{
+      margin-top: 0;
+      padding-right: 3em;
+      font-weight: 700;
+    }
+    a.icon-action{
+      display: none;
+      float: right;
+      margin-left: 5px;
+    }
+    p{
+      font-style: italic;
+    }
+  }
+}
+
+a.icon-action{
+  &.delete{
+    i:hover{
+      background-color: #ff525d;
+      color: #fff;
+    }
+  }
+  &.edit{
+    i:hover{
+      background-color: #1fbba6;
+      color: #fff;
+    }
+  }
+  &.add{
+    color: white;
+    i{
+      width: auto;
+      padding : 5px;
+      font-size: 0.8em;
+      background-color: #aaa;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px;
+      &:hover{
+        background-color: #1fbba6;
+      }
+    }
+  }
+  i{
+    padding: 5px;
+    width: 1em;
+    height: 1em;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: #aaa;
+    color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    transition: all 0.32s ease;
   }
 }

@@ -17,32 +17,17 @@
         Sunu Pinasthika F
       </a>
     </div>
-    <div id="projects">
+    <div id="todos">
       <h3>TODO LIST <a href="#search_project"><i class="uk-icon-search"></i></a></h3>
       <ul class="uk-list uk-list-space">
         <li class="active">
-          <a href="#">Quickly</a>
-          <i class="uk-animation-slide-right uk-icon-ellipsis-h"></i>
-        </li>
-        <li>
-          <a href="#">Fastly</a>
-          <i class="uk-animation-slide-right uk-icon-ellipsis-h"></i>
-        </li>
-        <li>
-          <a href="#">Rapidly</a>
-          <i class="uk-animation-slide-right uk-icon-ellipsis-h"></i>
-        </li>
-        <li>
-          <a href="#">Speedy</a>
-          <i class="uk-animation-slide-right uk-icon-ellipsis-h"></i>
-        </li>
-        <li>
-          <a href="#">Express</a>
-          <i class="uk-animation-slide-right uk-icon-ellipsis-h"></i>
+          <a href="#" class="title">Quickly</a>
+          <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
+          <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
         </li>
       </ul>
     </div>
-    <a href="#" class='add project'><i class="uk-icon-plus"></i> Add</a>
+    <a href="#add-todo" class='add todo' data-uk-modal><i class="uk-icon-plus"></i> Add</a>
   </div>
   <div id="main">
     <div id="navigation">
@@ -56,7 +41,7 @@
       <div class='container'>
         <h3>
           ACTIVITIES
-          <a href="#" class="add icon-action"><i class="uk-icon-plus">Add</i></a>
+          <a href="#add-activity" data-uk-modal class="add icon-action"><i class="uk-icon-plus">Add</i></a>
           <a href="#"><i class="uk-icon-search"></i></a>
         </h3>
         <ul class="sut-list">
@@ -84,7 +69,7 @@
       <div class='container'>
         <h3>
           Quickly Requirement
-          <a href="#" class="add icon-action"><i class="uk-icon-plus">Add</i></a>
+          <a href="#add-sub-activity" class="add icon-action" data-uk-modal><i class="uk-icon-plus">Add</i></a>
           <a href="#"><i class="uk-icon-search"></i></a>
         </h3>
         <ul class="sut-list-activity">
@@ -92,7 +77,8 @@
             <a href="#" class="check"><i class="uk-icon-circle-o"></i></a>
             <div>
               <h4>Quickly Requirement</h4>
-              <p>Due : 01 Dec 2015</p>
+              <span>Due : 01 Dec 2015</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni numquam maxime aliquid, aliquam harum minus quibusdam eveniet minima, neque ratione animi repellendus rerum deserunt sequi a iusto. Impedit quia, quisquam a dolor vel placeat necessitatibus perspiciatis, eveniet iusto blanditiis provident.</p>
             </div>
             <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
             <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
@@ -126,9 +112,81 @@
           </li>
         </ul>
       </div>
-      <div class='container'>Lorem ipsum dolor sit.</div>
-      <div class='container'>Lorem ipsum dolor sit.</div>
-      <div class='container'>Lorem ipsum dolor sit.</div>
+    </div>
+    <div id="add-todo" class="uk-modal">
+      <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close"></a>
+        <form class="uk-form uk-form-stacked">
+          <div class="uk-modal-header">
+            <h3>ADD TODO</h3> 
+          </div>
+            <div class="uk-form-row">
+                <label class="uk-form-label" for="todo-title">Title : </label>
+                <div class="uk-form-controls">
+                  <input type="text" class="uk-form-large uk-width-100" id="todo-title" placeholder="Title">
+                </div>
+            </div>
+          <div class="uk-modal-footer">
+            <input type="submit" class="uk-button uk-button-primary uk-button-large uk-width-100" value="Create">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="add-activity" class="uk-modal">
+      <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close"></a>
+        <form class="uk-form uk-form-stacked">
+          <div class="uk-modal-header">
+            <h3>ADD ACTIVITY</h3> 
+          </div>
+            <div class="uk-form-row">
+              <label class="uk-form-label" for="activity-title">Title : </label>
+              <div class="uk-form-controls">
+                <input type="text" class="uk-form-large uk-width-100" id="activity-title" placeholder="Title">
+              </div>
+            </div>
+            <div class="uk-form-row">
+              <label class="uk-form-label" for="activity-description">Description : </label>
+              <div class="uk-form-controls">
+                <textarea class="uk-form-large uk-width-100" id="activity-description" placeholder="Description" rows="4"></textarea>
+              </div>
+            </div>
+          <div class="uk-modal-footer">
+            <input type="submit" class="uk-button uk-button-primary uk-button-large uk-width-100" value="Create">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="add-sub-activity" class="uk-modal">
+      <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close"></a>
+        <form class="uk-form uk-form-stacked">
+          <div class="uk-modal-header">
+            <h3>ADD SUB ACTIVITY</h3> 
+          </div>
+            <div class="uk-form-row">
+              <label class="uk-form-label" for="subactivity-title">Title : </label>
+              <div class="uk-form-controls">
+                <input type="text" class="uk-form-large uk-width-100" id="subactivity-title" placeholder="Title">
+              </div>
+            </div>
+            <div class="uk-form-row">
+              <label class="uk-form-label" for="subactivity-due">Title : </label>
+              <div class="uk-form-controls">
+                <input type="text" class="uk-form-large uk-width-100" id="subactivity-due" placeholder="Due date" data-uk-datepicker="{format:'DD-MM-YYYY'}">
+              </div>
+            </div>
+            <div class="uk-form-row">
+              <label class="uk-form-label" for="subactivity-description">Description : </label>
+              <div class="uk-form-controls">
+                <textarea class="uk-form-large uk-width-100" id="subactivity-description" placeholder="Description" rows="4"></textarea>
+              </div>
+            </div>
+          <div class="uk-modal-footer">
+            <input type="submit" class="uk-button uk-button-primary uk-button-large uk-width-100" value="Create">
+          </div>
+        </form>
+      </div>
     </div>
   </div>
   <!--  Load js -->

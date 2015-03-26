@@ -11,18 +11,18 @@ html {
 body {
   margin: 0;
 }
-#sidebar #profile a img,
-#sidebar #projects ul.uk-list li i.uk-icon-ellipsis-h {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+#main,
+#main #content,
+#sidebar,
+body,
+html {
+  height: 100%;
 }
 
 #main #content,
 #main #content .container {
-  height: 100%;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 .sut-list li,
@@ -36,16 +36,15 @@ body {
   border: 0;
 }
 
-body,
-html {
-  height: 100%;
+.sut-list li p,
+.sut-list-activity li div p {
+  font-style: italic;
 }
 
 #sidebar {
   background-color: #1b2c3b;
   width: 200px;
   position: absolute;
-  height: 100%;
 }
 
 #sidebar #profile a {
@@ -60,61 +59,57 @@ html {
 }
 
 #sidebar #profile a img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
 }
 
-#sidebar #projects h3 {
+#sidebar #todos h3 {
   padding: 10px 20px;
   font-size: 1em;
   color: #fff;
   background-color: #32526e;
 }
 
-#sidebar #projects h3 a {
+#sidebar #todos h3 a {
   display: inline-block;
   float: right;
   color: #fff;
 }
 
-#sidebar #projects ul.uk-list li {
+#sidebar #todos ul.uk-list li {
   position: relative;
 }
 
-#sidebar #projects ul.uk-list li.active {
+#sidebar #todos ul.uk-list li.active {
   background-color: #213648;
 }
 
-#sidebar #projects ul.uk-list li i.uk-icon-ellipsis-h {
-  display: none;
-  position: absolute;
-  right: 20px;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  background-color: #fff;
-  color: #1b2c3b;
-  text-align: center;
-  padding: 3px;
+#sidebar #todos ul.uk-list li a.delete,
+#sidebar #todos ul.uk-list li a.edit {
   top: 10px;
-  cursor: pointer;
+  display: none;
 }
 
-#sidebar #projects ul.uk-list li:hover i.uk-icon-ellipsis-h {
+#sidebar #todos ul.uk-list li:hover a.delete,
+#sidebar #todos ul.uk-list li:hover a.edit {
   display: block;
 }
 
-#sidebar #projects ul.uk-list li a {
+#sidebar #todos ul.uk-list li a.title {
   color: #fff;
   display: block;
   padding: 10px 20px;
 }
 
-#sidebar #projects ul.uk-list li a:hover {
+#sidebar #todos ul.uk-list li a.title:hover {
   background-color: #213648;
   text-decoration: none;
 }
 
-#sidebar a.add.project {
+#sidebar a.add.todo {
   display: block;
   padding: 20px;
   background-color: #fff;
@@ -125,10 +120,16 @@ html {
   color: #1fbba6;
 }
 
+#sidebar a.add.todo:hover {
+  text-decoration: none;
+  background-color: #1fbba6;
+  color: #fff;
+  transition: background-color .32s ease;
+}
+
 #main {
   margin-left: 200px;
   position: relative;
-  height: 100%;
   overflow: hidden;
 }
 
@@ -162,7 +163,6 @@ html {
 }
 
 #main #content {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #eaedf1;
   margin-top: -37px;
@@ -176,10 +176,10 @@ html {
 }
 
 #main #content .container {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 20px;
   width: 50%;
+  height: 100%;
   background-color: #fff;
   float: left;
 }
@@ -221,6 +221,7 @@ html {
 .sut-list li {
   background-color: #fff;
   padding: 20px;
+  position: relative;
 }
 
 .sut-list li:hover {
@@ -244,7 +245,7 @@ html {
 }
 
 .sut-list li p {
-  font-style: italic;
+  font-weight: 300;
 }
 
 .sut-list-activity {
@@ -254,6 +255,7 @@ html {
 .sut-list-activity li {
   background-color: #fff;
   padding: 20px;
+  position: relative;
 }
 
 .sut-list-activity li:hover {
@@ -267,7 +269,6 @@ html {
 .sut-list-activity li .check {
   float: left;
   font-size: 2em;
-  margin-right: 1em;
   color: #ff525d;
   transition: color .32s ease;
 }
@@ -285,21 +286,20 @@ html {
 }
 
 .sut-list-activity li div {
-  float: left;
-  padding-left: 20px;
-  border-left: 1px solid #eee;
+  padding-left: 40px;
 }
 
 .sut-list-activity li div h4 {
   margin-top: 0;
   margin-bottom: 0;
   padding-right: 3em;
-  font-weight: 700;
 }
 
-.sut-list-activity li div p {
+.sut-list-activity li div span {
   font-style: italic;
   margin-top: 0;
+  font-size: .9em;
+  color: #aaa;
 }
 
 .sut-list-activity li .delete,
@@ -309,9 +309,29 @@ html {
   margin-left: 5px;
 }
 
+a.icon-action.delete {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+a.icon-action.delete i {
+  background-color: #e0303b;
+}
+
 a.icon-action.delete i:hover {
   background-color: #ff525d;
   color: #fff;
+}
+
+a.icon-action.edit {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+}
+
+a.icon-action.edit i {
+  background-color: #18aa96;
 }
 
 a.icon-action.edit i:hover {
@@ -328,12 +348,12 @@ a.icon-action.add i {
   width: auto;
   padding: 5px;
   font-size: .8em;
-  background-color: #aaa;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
+  background-color: #18aa96;
 }
 
 a.icon-action.add i:hover {
@@ -354,4 +374,22 @@ a.icon-action i {
   -o-border-radius: 50%;
   border-radius: 50%;
   transition: all .32s ease;
+}
+
+.uk-modal form .uk-button-primary {
+  color: #fff;
+  background-color: #18aa96;
+}
+
+.uk-modal form .uk-button-primary:hover {
+  background-color: #1fbba6;
+}
+
+.uk-datepicker {
+  border: 1px solid #aaa;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
 }

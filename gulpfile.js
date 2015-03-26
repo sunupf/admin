@@ -39,11 +39,14 @@ var dashboardLess = [
 
 var cssDashboardSource = [
   'bower_components/uikit/css/uikit.min.css',
+  'bower_components/uikit/css/components/datepicker.min.css',
   'dev_packages/css/dashboard.css'
 ]
 
 var jsDashboardSource = [
-  'bower_components/jquery/dist/jquery.js'
+  'bower_components/jquery/dist/jquery.js',
+  'bower_components/uikit/js/uikit.js',
+  'bower_components/uikit/js/components/datepicker.js'
 ]
 
 var taskDashboard = [

@@ -142,7 +142,7 @@ html,body{
       }
       h3{
         text-transform: uppercase;
-        padding: 10px 20px;
+        padding: 10px 20px 10px 0px;
         background-color: white;
         a{
           -webkit-transition: all 0.32s ease;
@@ -164,8 +164,29 @@ html,body{
           }
         }
       }
+      &>p{
+        font-style: italic;
+        margin-bottom : 30px;
+      }
       &:nth-child(2n+1){
         background-color: transparent;
+        h3{
+          padding: 10px 20px;
+        }
+      }
+    }
+    &.profile{
+      .container{
+        h3{
+          padding: 10px 20px 10px 0px;
+          background-color: transparent;
+          border-bottom: 1px solid #aaa;
+        }
+        form{
+          .uk-button{
+            color: #fff;
+          }
+        }
       }
     }
   }
@@ -324,4 +345,17 @@ a.icon-action{
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
+}
+
+#avatar{
+  text-align: center;
+  button.uk-button{
+    background-color: #18aa96;
+    &:hover{
+      background-color: #1fbba6;
+    }
+  }
+  input.uk-button{
+    margin-top : 30px;
+  }
 }

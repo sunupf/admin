@@ -53,7 +53,6 @@
             <div>
               <h4>Quickly Requirement</h4>
               <span>Due : 21 Dec 2015</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni numquam maxime aliquid, aliquam harum minus quibusdam eveniet minima, neque ratione animi repellendus rerum deserunt sequi a iusto. Impedit quia, quisquam a dolor vel placeat necessitatibus perspiciatis, eveniet iusto blanditiis provident.</p>
               <div class="uk-progress">
                   <div class="uk-progress-bar" style="width: 40%;">40%</div>
               </div>
@@ -70,6 +69,7 @@
           <a href="#add-sub-activity" class="add icon-action" data-uk-modal><i class="uk-icon-plus">Add</i></a>
           <a href="#"><i class="uk-icon-search"></i></a>
         </h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni numquam maxime aliquid, aliquam harum minus quibusdam eveniet minima, neque ratione animi repellendus rerum deserunt sequi a iusto. Impedit quia, quisquam a dolor vel placeat necessitatibus perspiciatis, eveniet iusto blanditiis provident.</p>
         <ul class="sut-list-activity">
           <li class="uk-clearfix">
             <a href="#" class="check">
@@ -131,7 +131,8 @@
           </div>
             <div class="uk-form-row">
                 <label class="uk-form-label" for="todo-title">Title : </label>
-                <div class="uk-form-controls">
+                <div class="uk-form-controls uk-form-icon uk-width-100">
+                  <i class="uk-icon-bookmark"></i>
                   <input type="text" class="uk-form-large uk-width-100" id="todo-title" placeholder="Title">
                 </div>
             </div>
@@ -150,13 +151,15 @@
           </div>
             <div class="uk-form-row">
               <label class="uk-form-label" for="activity-title">Title : </label>
-              <div class="uk-form-controls">
+              <div class="uk-form-controls uk-form-icon uk-width-100">
+                <i class="uk-icon-bookmark"></i>
                 <input type="text" class="uk-form-large uk-width-100" id="activity-title" placeholder="Title">
               </div>
             </div>
             <div class="uk-form-row">
               <label class="uk-form-label" for="subactivity-due">Due Date : </label>
-              <div class="uk-form-controls">
+              <div class="uk-form-controls uk-form-icon uk-width-100">
+                <i class="uk-icon-calendar"></i>
                 <input type="text" class="uk-form-large uk-width-100" id="subactivity-due" placeholder="Due date" data-uk-datepicker="{format:'DD-MM-YYYY'}">
               </div>
             </div>
@@ -181,7 +184,8 @@
           </div>
             <div class="uk-form-row">
               <label class="uk-form-label" for="subactivity-title">Title : </label>
-              <div class="uk-form-controls">
+              <div class="uk-form-controls uk-form-icon uk-width-100">
+                <i class="uk-icon-bookmark"></i>
                 <input type="text" class="uk-form-large uk-width-100" id="subactivity-title" placeholder="Title">
               </div>
             </div>
@@ -210,6 +214,13 @@
       $('.activities').click(function(e){
         if($(e.target).hasClass('activities')){
           $(this).css('width','66.66%');
+        }
+      });
+      $('.check').click(function(e){
+        if($(this).hasClass('active')){
+          $(this).removeClass('active')
+        }else{
+          $(this).addClass('active');
         }
       })
     });

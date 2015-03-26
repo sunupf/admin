@@ -25,6 +25,11 @@ html {
   -moz-box-sizing: border-box;
 }
 
+#avatar,
+a.icon-action i {
+  text-align: center;
+}
+
 #sidebar {
   background-color: #1b2c3b;
   width: 200px;
@@ -186,7 +191,7 @@ html {
 
 #main #content .container h3 {
   text-transform: uppercase;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 0;
   background-color: #fff;
 }
 
@@ -212,8 +217,27 @@ html {
   margin-right: 5px;
 }
 
+#main #content .container>p {
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
 #main #content .container:nth-child(2n+1) {
   background-color: transparent;
+}
+
+#main #content .container:nth-child(2n+1) h3 {
+  padding: 10px 20px;
+}
+
+#main #content.profile .container h3 {
+  padding: 10px 20px 10px 0;
+  background-color: transparent;
+  border-bottom: 1px solid #aaa;
+}
+
+#main #content.profile .container form .uk-button {
+  color: #fff;
 }
 
 .sut-list-activity {
@@ -352,7 +376,6 @@ a.icon-action i {
   width: 1em;
   height: 1em;
   font-size: .8em;
-  text-align: center;
   background-color: #aaa;
   color: #fff;
   -webkit-border-radius: 50%;
@@ -381,4 +404,16 @@ a.icon-action i {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
+}
+
+#avatar button.uk-button {
+  background-color: #18aa96;
+}
+
+#avatar button.uk-button:hover {
+  background-color: #1fbba6;
+}
+
+#avatar input.uk-button {
+  margin-top: 30px;
 }

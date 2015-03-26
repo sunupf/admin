@@ -7270,6 +7270,52 @@ a.uk-datepicker-table-muted {
   background: #00a8e6;
   color: #fff;
 }
+/*! UIkit 2.18.0 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
+
+.uk-form-password {
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+}
+
+.uk-form-password-toggle {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -6px;
+  font-size: 13px;
+  line-height: 13px;
+  color: #999;
+}
+
+.uk-form-password-toggle:hover {
+  color: #999;
+  text-decoration: none;
+}
+
+.uk-form-password>input {
+  padding-right: 50px!important;
+}
+/*! UIkit 2.18.0 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
+
+.uk-form-file {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+}
+
+.uk-form-file input[type=file] {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+  left: 0;
+  font-size: 500px;
+}
 #main #content .container h3 a i,
 h1,
 h2,
@@ -7297,6 +7343,11 @@ html {
 #main #content .container {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+}
+
+#avatar,
+a.icon-action i {
+  text-align: center;
 }
 
 #sidebar {
@@ -7460,7 +7511,7 @@ html {
 
 #main #content .container h3 {
   text-transform: uppercase;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 0;
   background-color: #fff;
 }
 
@@ -7482,8 +7533,27 @@ html {
   margin-right: 5px;
 }
 
+#main #content .container>p {
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
 #main #content .container:nth-child(2n+1) {
   background-color: transparent;
+}
+
+#main #content .container:nth-child(2n+1) h3 {
+  padding: 10px 20px;
+}
+
+#main #content.profile .container h3 {
+  padding: 10px 20px 10px 0;
+  background-color: transparent;
+  border-bottom: 1px solid #aaa;
+}
+
+#main #content.profile .container form .uk-button {
+  color: #fff;
 }
 
 .sut-list-activity {
@@ -7622,7 +7692,6 @@ a.icon-action i {
   width: 1em;
   height: 1em;
   font-size: .8em;
-  text-align: center;
   background-color: #aaa;
   color: #fff;
   -webkit-border-radius: 50%;
@@ -7651,4 +7720,16 @@ a.icon-action i {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
+}
+
+#avatar button.uk-button {
+  background-color: #18aa96;
+}
+
+#avatar button.uk-button:hover {
+  background-color: #1fbba6;
+}
+
+#avatar input.uk-button {
+  margin-top: 30px;
 }

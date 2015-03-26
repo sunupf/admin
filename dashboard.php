@@ -38,7 +38,7 @@
       </ul>
     </div>
     <div id="content">
-      <div class='container uk-animation-fade'>
+      <div class='container uk-animation-fade activities'>
         <h3>
           ACTIVITIES
           <a href="#add-activity" data-uk-modal class="add icon-action"><i class="uk-icon-plus">Add</i></a>
@@ -200,5 +200,19 @@
   </div>
   <!--  Load js -->
   <script src="assets/js/dashboard.js"></script>
+  <script>
+    $(function(){
+      $('.activities .sut-list-activity li').click(function(e){
+        if(!$(e.target).hasClass('activities')){
+          $(this).closest('.activities').css('width','33.33%');
+        }
+      });
+      $('.activities').click(function(e){
+        if($(e.target).hasClass('activities')){
+          $(this).css('width','66.66%');
+        }
+      })
+    });
+  </script>
 </body>
 </html>

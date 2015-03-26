@@ -7382,6 +7382,8 @@ html {
   text-decoration: none;
   background-color: #1fbba6;
   color: #fff;
+  -webkit-transition: background-color .32s ease;
+  -o-transition: background-color .32s ease;
   transition: background-color .32s ease;
 }
 
@@ -7425,6 +7427,8 @@ html {
   background-color: #eaedf1;
   margin-top: -37px;
   padding-top: 37px;
+  overflow: hidden;
+  width: 150%;
 }
 
 #main #content:after {
@@ -7441,10 +7445,17 @@ html {
 #main #content .container {
   box-sizing: border-box;
   padding: 20px;
-  width: 50%;
+  width: 33.33%;
   height: 100%;
   background-color: #fff;
   float: left;
+  -webkit-transition: width .6s ease;
+  -o-transition: width .6s ease;
+  transition: width .6s ease;
+}
+
+#main #content .container.activities {
+  width: 66.66%;
 }
 
 #main #content .container h3 {
@@ -7454,6 +7465,8 @@ html {
 }
 
 #main #content .container h3 a {
+  -webkit-transition: all .32s ease;
+  -o-transition: all .32s ease;
   transition: all .32s ease;
   float: right;
   margin-left: 10px;
@@ -7497,6 +7510,8 @@ html {
   float: left;
   font-size: 2em;
   color: #ff525d;
+  -webkit-transition: color .32s ease;
+  -o-transition: color .32s ease;
   transition: color .32s ease;
 }
 
@@ -7615,6 +7630,8 @@ a.icon-action i {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
+  -webkit-transition: all .32s ease;
+  -o-transition: all .32s ease;
   transition: all .32s ease;
 }
 

@@ -21,7 +21,7 @@
       <h3>TODO LIST <a href="#search_project"><i class="uk-icon-search"></i></a></h3>
       <ul class="uk-list uk-list-space">
         <li class="active">
-          <a href="#" class="title">Quickly</a>
+          <a href="dashboard.php" class="title">Quickly</a>
           <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
           <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
         </li>
@@ -38,7 +38,7 @@
       </ul>
     </div>
     <div id="content">
-      <div class='container'>
+      <div class='container uk-animation-fade'>
         <h3>
           ACTIVITIES
           <a href="#add-activity" data-uk-modal class="add icon-action"><i class="uk-icon-plus">Add</i></a>
@@ -66,7 +66,7 @@
         </ul>
         
       </div>
-      <div class='container'>
+      <div class='container uk-animation-slide-right'>
         <h3>
           Quickly Requirement
           <a href="#add-sub-activity" class="add icon-action" data-uk-modal><i class="uk-icon-plus">Add</i></a>

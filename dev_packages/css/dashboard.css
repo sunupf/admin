@@ -36,11 +36,6 @@ html {
   border: 0;
 }
 
-.sut-list li p,
-.sut-list-activity li div p {
-  font-style: italic;
-}
-
 #sidebar {
   background-color: #1b2c3b;
   width: 200px;
@@ -244,8 +239,13 @@ html {
   margin-left: 5px;
 }
 
+.sut-list-activity li .check i.uk-icon-circle-o,
+.sut-list-activity li:hover a.icon-action {
+  display: block;
+}
+
 .sut-list li p {
-  font-weight: 300;
+  font-style: italic;
 }
 
 .sut-list-activity {
@@ -262,10 +262,6 @@ html {
   background-color: #f9f9f9;
 }
 
-.sut-list-activity li:hover a.icon-action {
-  display: block;
-}
-
 .sut-list-activity li .check {
   float: left;
   font-size: 2em;
@@ -273,8 +269,17 @@ html {
   transition: color .32s ease;
 }
 
+.sut-list-activity li .check i.uk-icon-check-circle,
+.sut-list-activity li .check.active i.uk-icon-circle-o {
+  display: none;
+}
+
 .sut-list-activity li .check.active {
   color: #1fbba6;
+}
+
+.sut-list-activity li .check.active i.uk-icon-check-circle {
+  display: block;
 }
 
 .sut-list-activity li .check.active:hover {
@@ -283,6 +288,7 @@ html {
 
 .sut-list-activity li .check:hover {
   color: #1fbba6;
+  text-decoration: none;
 }
 
 .sut-list-activity li div {
@@ -300,6 +306,11 @@ html {
   margin-top: 0;
   font-size: .9em;
   color: #aaa;
+}
+
+.sut-list-activity li div p {
+  font-style: italic;
+  display: none;
 }
 
 .sut-list-activity li .delete,

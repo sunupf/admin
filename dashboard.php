@@ -74,7 +74,10 @@
         </h3>
         <ul class="sut-list-activity">
           <li class="uk-clearfix">
-            <a href="#" class="check"><i class="uk-icon-circle-o"></i></a>
+            <a href="#" class="check">
+              <i class="uk-animation-fade uk-icon-circle-o"></i>
+              <i class="uk-animation-fade uk-icon-check-circle"></i>
+            </a>
             <div>
               <h4>Quickly Requirement</h4>
               <span>Due : 01 Dec 2015</span>
@@ -84,28 +87,40 @@
             <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
           </li>
           <li class="uk-clearfix">
-            <a href="#" class="check"><i class="uk-icon-circle-o"></i></a>
+            <a href="#" class="check">
+              <i class="uk-animation-fade uk-icon-circle-o"></i>
+              <i class="uk-animation-fade uk-icon-check-circle"></i>
+            </a>
             <div>
-              <h4>Quickly Implementation</h4>
-              <p>Due : 11 Dec 2015</p>
+              <h4>Quickly Requirement</h4>
+              <span>Due : 01 Dec 2015</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni numquam maxime aliquid, aliquam harum minus quibusdam eveniet minima, neque ratione animi repellendus rerum deserunt sequi a iusto. Impedit quia, quisquam a dolor vel placeat necessitatibus perspiciatis, eveniet iusto blanditiis provident.</p>
             </div>
             <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
             <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
           </li>
           <li class="uk-clearfix">
-            <a href="#" class="check active"><i class="uk-icon-check-circle"></i></a>
+            <a href="#" class="check active">
+              <i class="uk-animation-fade uk-icon-circle-o"></i>
+              <i class="uk-animation-fade uk-icon-check-circle"></i>
+            </a>
             <div>
-              <h4>Quickly Testing</h4>
-              <p>Due : 11 Dec 2015</p>
+              <h4>Quickly Requirement</h4>
+              <span>Due : 01 Dec 2015</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni numquam maxime aliquid, aliquam harum minus quibusdam eveniet minima, neque ratione animi repellendus rerum deserunt sequi a iusto. Impedit quia, quisquam a dolor vel placeat necessitatibus perspiciatis, eveniet iusto blanditiis provident.</p>
             </div>
             <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
             <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
           </li>
           <li class="uk-clearfix">
-            <a href="#" class="check"><i class="uk-icon-circle-o"></i></a>
+            <a href="#" class="check">
+              <i class="uk-animation-fade uk-icon-circle-o"></i>
+              <i class="uk-animation-fade uk-icon-check-circle"></i>
+            </a>
             <div>
-              <h4>Quickly Maintenance</h4>
-              <p>Due : 11 Dec 2015</p>
+              <h4>Quickly Requirement</h4>
+              <span>Due : 01 Dec 2015</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni numquam maxime aliquid, aliquam harum minus quibusdam eveniet minima, neque ratione animi repellendus rerum deserunt sequi a iusto. Impedit quia, quisquam a dolor vel placeat necessitatibus perspiciatis, eveniet iusto blanditiis provident.</p>
             </div>
             <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
             <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>

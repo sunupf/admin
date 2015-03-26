@@ -189,8 +189,7 @@ html,body{
       margin-left: 5px;
     }
     p{
-      font-style: italic;
-      font-weight: 300;
+      font-style: italic; 
     }
   }
 }
@@ -217,14 +216,27 @@ html,body{
       font-size: 2em;
       color: #ff525d;
       transition: color 0.32s ease;
+      i.uk-icon-circle-o{
+        display: block;
+      }
+      i.uk-icon-check-circle{
+        display: none;
+      }
       &.active{
         color: #1fbba6;
+        i.uk-icon-circle-o{
+          display: none;
+        }
+        i.uk-icon-check-circle{
+          display: block;
+        }
         &:hover{
           color: #ff525d;
         }
       }
       &:hover{
         color: #1fbba6;
+        text-decoration: none;
       }
     }
     div{
@@ -243,6 +255,7 @@ html,body{
       }
       p{
         font-style: italic;
+        display: none;
       }
     }
     .delete,.edit{

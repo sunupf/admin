@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="bower_components/uikit/css/components/progress.almost-flat.min.css">
 </head>
 <body>
-  <div id="sidebar">
+  <div id="sidebar" class="uk-animation-slide-left">
     <div id="profile">
       <a href="profile.php">
         <img src="http://www.gravatar.com/avatar/<?php echo md5('sunupf@gmail.com'); ?>?s=40" alt="Sunu's Avatar">
@@ -27,7 +27,7 @@
         </li>
       </ul>
     </div>
-    <a href="#add-todo" class='add todo' data-uk-modal><i class="uk-icon-plus"></i> Add</a>
+    <a href="#add-todo" class='add todo uk-animation-slide-left' data-uk-modal><i class="uk-icon-plus"></i> Add</a>
   </div>
   <div id="main">
     <div id="navigation">
@@ -44,24 +44,22 @@
           <a href="#add-activity" data-uk-modal class="add icon-action"><i class="uk-icon-plus">Add</i></a>
           <a href="#"><i class="uk-icon-search"></i></a>
         </h3>
-        <ul class="sut-list">
-          <li>
-            <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
-            <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
-            <h4>Quickly Requirement</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo debitis excepturi expedita praesentium minima similique, facilis hic tempora quas dolore.</p>
-            <div class="uk-progress">
-              <div class="uk-progress-bar" style="width: 100%;"> 10 of 10 Todo (100%) </div>
+        <ul class="sut-list-activity">
+          <li class="uk-clearfix">
+            <a href="#" class="check">
+              <i class="uk-icon-circle-o"></i>
+              <i class="uk-icon-check-circle"></i>
+            </a>
+            <div>
+              <h4>Quickly Requirement</h4>
+              <span>Due : 21 Dec 2015</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni numquam maxime aliquid, aliquam harum minus quibusdam eveniet minima, neque ratione animi repellendus rerum deserunt sequi a iusto. Impedit quia, quisquam a dolor vel placeat necessitatibus perspiciatis, eveniet iusto blanditiis provident.</p>
+              <div class="uk-progress">
+                  <div class="uk-progress-bar" style="width: 40%;">40%</div>
+              </div>
             </div>
-          </li>
-          <li>
-            <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
-            <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
-            <h4>Quickly Implementation</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo debitis excepturi expedita praesentium minima similique, facilis hic tempora quas dolore.</p>
-            <div class="uk-progress">
-              <div class="uk-progress-bar" style="width: 40%;"> 4 of 10 Todo (40%) </div>
-            </div>
+            <a href="#" class="icon-action delete"><i class="uk-animation-slide-right uk-icon-trash"></i></a>
+            <a href="#" class="icon-action edit"><i class="uk-animation-slide-right uk-icon-pencil"></i></a>
           </li>
         </ul>
         
@@ -80,11 +78,10 @@
             </a>
             <div>
               <h4>Quickly Requirement</h4>
-              <span>Due : 01 Dec 2015</span>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni numquam maxime aliquid, aliquam harum minus quibusdam eveniet minima, neque ratione animi repellendus rerum deserunt sequi a iusto. Impedit quia, quisquam a dolor vel placeat necessitatibus perspiciatis, eveniet iusto blanditiis provident.</p>
             </div>
-            <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
-            <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
+            <a href="#" class="icon-action delete"><i class="uk-animation-slide-right uk-icon-trash"></i></a>
+            <a href="#" class="icon-action edit"><i class="uk-animation-slide-right uk-icon-pencil"></i></a>
           </li>
           <li class="uk-clearfix">
             <a href="#" class="check">
@@ -93,11 +90,10 @@
             </a>
             <div>
               <h4>Quickly Requirement</h4>
-              <span>Due : 01 Dec 2015</span>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni numquam maxime aliquid, aliquam harum minus quibusdam eveniet minima, neque ratione animi repellendus rerum deserunt sequi a iusto. Impedit quia, quisquam a dolor vel placeat necessitatibus perspiciatis, eveniet iusto blanditiis provident.</p>
             </div>
-            <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
-            <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
+            <a href="#" class="icon-action delete"><i class="uk-animation-slide-right uk-icon-trash"></i></a>
+            <a href="#" class="icon-action edit"><i class="uk-animation-slide-right uk-icon-pencil"></i></a>
           </li>
           <li class="uk-clearfix">
             <a href="#" class="check active">
@@ -106,11 +102,10 @@
             </a>
             <div>
               <h4>Quickly Requirement</h4>
-              <span>Due : 01 Dec 2015</span>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni numquam maxime aliquid, aliquam harum minus quibusdam eveniet minima, neque ratione animi repellendus rerum deserunt sequi a iusto. Impedit quia, quisquam a dolor vel placeat necessitatibus perspiciatis, eveniet iusto blanditiis provident.</p>
             </div>
-            <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
-            <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
+            <a href="#" class="icon-action delete"><i class="uk-animation-slide-right uk-icon-trash"></i></a>
+            <a href="#" class="icon-action edit"><i class="uk-animation-slide-right uk-icon-pencil"></i></a>
           </li>
           <li class="uk-clearfix">
             <a href="#" class="check">
@@ -119,11 +114,10 @@
             </a>
             <div>
               <h4>Quickly Requirement</h4>
-              <span>Due : 01 Dec 2015</span>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni numquam maxime aliquid, aliquam harum minus quibusdam eveniet minima, neque ratione animi repellendus rerum deserunt sequi a iusto. Impedit quia, quisquam a dolor vel placeat necessitatibus perspiciatis, eveniet iusto blanditiis provident.</p>
             </div>
-            <a href="#" class="uk-animation-slide-right icon-action delete"><i class="uk-icon-trash"></i></a>
-            <a href="#" class="uk-animation-slide-right icon-action edit"><i class="uk-icon-pencil"></i></a>
+            <a href="#" class="icon-action delete"><i class="uk-animation-slide-right uk-icon-trash"></i></a>
+            <a href="#" class="icon-action edit"><i class="uk-animation-slide-right uk-icon-pencil"></i></a>
           </li>
         </ul>
       </div>
@@ -161,6 +155,12 @@
               </div>
             </div>
             <div class="uk-form-row">
+              <label class="uk-form-label" for="subactivity-due">Due Date : </label>
+              <div class="uk-form-controls">
+                <input type="text" class="uk-form-large uk-width-100" id="subactivity-due" placeholder="Due date" data-uk-datepicker="{format:'DD-MM-YYYY'}">
+              </div>
+            </div>
+            <div class="uk-form-row">
               <label class="uk-form-label" for="activity-description">Description : </label>
               <div class="uk-form-controls">
                 <textarea class="uk-form-large uk-width-100" id="activity-description" placeholder="Description" rows="4"></textarea>
@@ -183,12 +183,6 @@
               <label class="uk-form-label" for="subactivity-title">Title : </label>
               <div class="uk-form-controls">
                 <input type="text" class="uk-form-large uk-width-100" id="subactivity-title" placeholder="Title">
-              </div>
-            </div>
-            <div class="uk-form-row">
-              <label class="uk-form-label" for="subactivity-due">Title : </label>
-              <div class="uk-form-controls">
-                <input type="text" class="uk-form-large uk-width-100" id="subactivity-due" placeholder="Due date" data-uk-datepicker="{format:'DD-MM-YYYY'}">
               </div>
             </div>
             <div class="uk-form-row">

@@ -7299,17 +7299,6 @@ html {
   -moz-box-sizing: border-box;
 }
 
-.sut-list li,
-.sut-list-activity li {
-  border-bottom: 1px solid #eee;
-  list-style: none;
-}
-
-.sut-list li:last-child,
-.sut-list-activity li:last-child {
-  border: 0;
-}
-
 #sidebar {
   background-color: #1b2c3b;
   width: 200px;
@@ -7444,6 +7433,11 @@ html {
   clear: both;
 }
 
+.sut-list-activity li .check i.uk-icon-circle-o,
+.sut-list-activity li:hover a.icon-action {
+  display: block;
+}
+
 #main #content .container {
   box-sizing: border-box;
   padding: 20px;
@@ -7479,53 +7473,20 @@ html {
   background-color: transparent;
 }
 
-.sut-list {
-  padding-left: 0;
-}
-
-.sut-list li {
-  background-color: #fff;
-  padding: 20px;
-  position: relative;
-}
-
-.sut-list li:hover {
-  background-color: #f9f9f9;
-}
-
-.sut-list li:hover a.icon-action {
-  display: block;
-}
-
-.sut-list li h4 {
-  margin-top: 0;
-  padding-right: 3em;
-  font-weight: 700;
-}
-
-.sut-list li a.icon-action {
-  display: none;
-  float: right;
-  margin-left: 5px;
-}
-
-.sut-list-activity li .check i.uk-icon-circle-o,
-.sut-list-activity li:hover a.icon-action {
-  display: block;
-}
-
-.sut-list li p {
-  font-style: italic;
-}
-
 .sut-list-activity {
   padding-left: 0;
 }
 
 .sut-list-activity li {
+  border-bottom: 1px solid #eee;
   background-color: #fff;
   padding: 20px;
+  list-style: none;
   position: relative;
+}
+
+.sut-list-activity li:last-child {
+  border: 0;
 }
 
 .sut-list-activity li:hover {
@@ -7561,24 +7522,24 @@ html {
   text-decoration: none;
 }
 
-.sut-list-activity li div {
+.sut-list-activity li>div {
   padding-left: 40px;
 }
 
-.sut-list-activity li div h4 {
+.sut-list-activity li>div h4 {
   margin-top: 0;
   margin-bottom: 0;
   padding-right: 3em;
 }
 
-.sut-list-activity li div span {
+.sut-list-activity li>div span {
   font-style: italic;
   margin-top: 0;
   font-size: .9em;
   color: #aaa;
 }
 
-.sut-list-activity li div p {
+.sut-list-activity li>div p {
   font-style: italic;
   display: none;
 }

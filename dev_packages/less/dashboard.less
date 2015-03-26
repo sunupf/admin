@@ -160,40 +160,6 @@ html,body{
     }
   }
 }
-
-.sut-list{
-  padding-left: 0;
-  li{
-    border-bottom: 1px solid #eee;
-    background-color: white;
-    padding: 20px;
-    list-style: none;
-    position: relative;
-    &:last-child{
-      border: 0;
-    }
-    &:hover{
-      background-color: #f9f9f9;
-      a.icon-action{
-        display: block;
-      }
-    }
-    h4{
-      margin-top: 0;
-      padding-right: 3em;
-      font-weight: 700;
-    }
-    a.icon-action{
-      display: none;
-      float: right;
-      margin-left: 5px;
-    }
-    p{
-      font-style: italic; 
-    }
-  }
-}
-
 .sut-list-activity{
   padding-left: 0;
   li{
@@ -239,7 +205,7 @@ html,body{
         text-decoration: none;
       }
     }
-    div{
+    &>div{
       padding-left: 40px; 
       /* border-left: 1px solid #eee;*/
       h4{

@@ -25,7 +25,6 @@
     "tests"
   ],
   "dependencies": {
-    "fullpage.js": "~2.6.2",
     "uikit": "~2.18.0"
   }
 }

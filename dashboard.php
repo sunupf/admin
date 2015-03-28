@@ -6,8 +6,7 @@
   
   <!--  Load CSS -->
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="assets/css/dashboard.css">
-  <link rel="stylesheet" href="bower_components/uikit/css/components/progress.almost-flat.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <div id="sidebar" class="uk-animation-slide-left">
@@ -203,7 +202,7 @@
     </div>
   </div>
   <!--  Load js -->
-  <script src="assets/js/dashboard.js"></script>
+  <script src="assets/js/app.js"></script>
   <script>
     $(function(){
       $('.activities .sut-list-activity li').click(function(e){
